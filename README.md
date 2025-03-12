@@ -4,8 +4,12 @@ Java RESTful API criado para a Santander Dev Week proposto pela plataforma DIO
 ## Diagrama de Classes
 ```mermaid
 classDiagram
-    class User {
-        +String name
+        class User {
+        -String name
+        -Account account 
+        -Feature[] feature
+        -Card card
+        -News[] news
     }
     
     class Account {
