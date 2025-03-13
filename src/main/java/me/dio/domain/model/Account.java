@@ -19,7 +19,7 @@ public class Account {
     @Column(scale = 13, precision = 2)
     private Double balance;
 
-    @Column(scale = 13, precision = 2)
+    @Column(name = "additional_limit", scale = 13, precision = 2)
     private Double limit;
 
     public Long getId() { return id; }
